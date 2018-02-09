@@ -17,7 +17,7 @@
 #include "monitor.h"
 #include <signal.h>
 #include "fork.h"
-#include "clean.h"
+#include "cleaner.h"
 #include "consts.h"
 
 using namespace std;

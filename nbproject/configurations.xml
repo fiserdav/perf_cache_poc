@@ -4,6 +4,141 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="include" displayName="include" projectFiles="true">
+        <logicalFolder name="asm" displayName="asm" projectFiles="true">
+          <itemPath>include/asm/alternative-asm.h</itemPath>
+          <itemPath>include/asm/atomic.h</itemPath>
+          <itemPath>include/asm/barrier.h</itemPath>
+          <itemPath>include/asm/bug.h</itemPath>
+          <itemPath>include/asm/export.h</itemPath>
+          <itemPath>include/asm/sections.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="asm-generic" displayName="asm-generic" projectFiles="true">
+          <logicalFolder name="bitops" displayName="bitops" projectFiles="true">
+            <itemPath>include/asm-generic/bitops/__ffs.h</itemPath>
+            <itemPath>include/asm-generic/bitops/__ffz.h</itemPath>
+            <itemPath>include/asm-generic/bitops/__fls.h</itemPath>
+            <itemPath>include/asm-generic/bitops/arch_hweight.h</itemPath>
+            <itemPath>include/asm-generic/bitops/atomic.h</itemPath>
+            <itemPath>include/asm-generic/bitops/const_hweight.h</itemPath>
+            <itemPath>include/asm-generic/bitops/find.h</itemPath>
+            <itemPath>include/asm-generic/bitops/fls.h</itemPath>
+            <itemPath>include/asm-generic/bitops/fls64.h</itemPath>
+            <itemPath>include/asm-generic/bitops/hweight.h</itemPath>
+          </logicalFolder>
+          <itemPath>include/asm-generic/atomic-gcc.h</itemPath>
+          <itemPath>include/asm-generic/barrier.h</itemPath>
+          <itemPath>include/asm-generic/bitops.h</itemPath>
+          <itemPath>include/asm-generic/bitsperlong.h</itemPath>
+          <itemPath>include/asm-generic/hugetlb_encode.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="linux" displayName="linux" projectFiles="true">
+          <logicalFolder name="sched" displayName="sched" projectFiles="true">
+            <itemPath>include/linux/sched/clock.h</itemPath>
+            <itemPath>include/linux/sched/mm.h</itemPath>
+            <itemPath>include/linux/sched/task.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="unaligned" displayName="unaligned" projectFiles="true">
+            <itemPath>include/linux/unaligned/packed_struct.h</itemPath>
+          </logicalFolder>
+          <itemPath>include/linux/atomic.h</itemPath>
+          <itemPath>include/linux/bitmap.h</itemPath>
+          <itemPath>include/linux/bitops.h</itemPath>
+          <itemPath>include/linux/bug.h</itemPath>
+          <itemPath>include/linux/compiler-gcc.h</itemPath>
+          <itemPath>include/linux/compiler.h</itemPath>
+          <itemPath>include/linux/coresight-pmu.h</itemPath>
+          <itemPath>include/linux/debug_locks.h</itemPath>
+          <itemPath>include/linux/delay.h</itemPath>
+          <itemPath>include/linux/err.h</itemPath>
+          <itemPath>include/linux/export.h</itemPath>
+          <itemPath>include/linux/filter.h</itemPath>
+          <itemPath>include/linux/ftrace.h</itemPath>
+          <itemPath>include/linux/gfp.h</itemPath>
+          <itemPath>include/linux/hardirq.h</itemPath>
+          <itemPath>include/linux/hash.h</itemPath>
+          <itemPath>include/linux/hashtable.h</itemPath>
+          <itemPath>include/linux/interrupt.h</itemPath>
+          <itemPath>include/linux/irqflags.h</itemPath>
+          <itemPath>include/linux/jhash.h</itemPath>
+          <itemPath>include/linux/kallsyms.h</itemPath>
+          <itemPath>include/linux/kern_levels.h</itemPath>
+          <itemPath>include/linux/kernel.h</itemPath>
+          <itemPath>include/linux/linkage.h</itemPath>
+          <itemPath>include/linux/list.h</itemPath>
+          <itemPath>include/linux/lockdep.h</itemPath>
+          <itemPath>include/linux/log2.h</itemPath>
+          <itemPath>include/linux/module.h</itemPath>
+          <itemPath>include/linux/mutex.h</itemPath>
+          <itemPath>include/linux/poison.h</itemPath>
+          <itemPath>include/linux/proc_fs.h</itemPath>
+          <itemPath>include/linux/rbtree.h</itemPath>
+          <itemPath>include/linux/rbtree_augmented.h</itemPath>
+          <itemPath>include/linux/rcu.h</itemPath>
+          <itemPath>include/linux/refcount.h</itemPath>
+          <itemPath>include/linux/seq_file.h</itemPath>
+          <itemPath>include/linux/spinlock.h</itemPath>
+          <itemPath>include/linux/stacktrace.h</itemPath>
+          <itemPath>include/linux/string.h</itemPath>
+          <itemPath>include/linux/stringify.h</itemPath>
+          <itemPath>include/linux/time64.h</itemPath>
+          <itemPath>include/linux/types.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="tools" displayName="tools" projectFiles="true">
+          <itemPath>include/tools/be_byteshift.h</itemPath>
+          <itemPath>include/tools/endian.h</itemPath>
+          <itemPath>include/tools/le_byteshift.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="trace" displayName="trace" projectFiles="true">
+          <logicalFolder name="events" displayName="events" projectFiles="true">
+            <itemPath>include/trace/events/lock.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+        <logicalFolder name="uapi" displayName="uapi" projectFiles="true">
+          <logicalFolder name="asm" displayName="asm" projectFiles="true">
+            <itemPath>include/uapi/asm/bpf_perf_event.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="asm-generic" displayName="asm-generic" projectFiles="true">
+            <itemPath>include/uapi/asm-generic/bitsperlong.h</itemPath>
+            <itemPath>include/uapi/asm-generic/bpf_perf_event.h</itemPath>
+            <itemPath>include/uapi/asm-generic/errno-base.h</itemPath>
+            <itemPath>include/uapi/asm-generic/errno.h</itemPath>
+            <itemPath>include/uapi/asm-generic/fcntl.h</itemPath>
+            <itemPath>include/uapi/asm-generic/ioctls.h</itemPath>
+            <itemPath>include/uapi/asm-generic/mman-common.h</itemPath>
+            <itemPath>include/uapi/asm-generic/mman.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="drm" displayName="drm" projectFiles="true">
+            <itemPath>include/uapi/drm/drm.h</itemPath>
+            <itemPath>include/uapi/drm/i915_drm.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="linux" displayName="linux" projectFiles="true">
+            <itemPath>include/uapi/linux/bpf.h</itemPath>
+            <itemPath>include/uapi/linux/bpf_common.h</itemPath>
+            <itemPath>include/uapi/linux/bpf_perf_event.h</itemPath>
+            <itemPath>include/uapi/linux/fcntl.h</itemPath>
+            <itemPath>include/uapi/linux/hw_breakpoint.h</itemPath>
+            <itemPath>include/uapi/linux/kcmp.h</itemPath>
+            <itemPath>include/uapi/linux/kvm.h</itemPath>
+            <itemPath>include/uapi/linux/mman.h</itemPath>
+            <itemPath>include/uapi/linux/perf_event.h</itemPath>
+            <itemPath>include/uapi/linux/prctl.h</itemPath>
+            <itemPath>include/uapi/linux/sched.h</itemPath>
+            <itemPath>include/uapi/linux/stat.h</itemPath>
+            <itemPath>include/uapi/linux/vhost.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="sound" displayName="sound" projectFiles="true">
+            <itemPath>include/uapi/sound/asound.h</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>cleaner.h</itemPath>
+      <itemPath>consts.h</itemPath>
+      <itemPath>counters.h</itemPath>
+      <itemPath>cpu.h</itemPath>
+      <itemPath>event_alarm.h</itemPath>
+      <itemPath>fork.h</itemPath>
+      <itemPath>monitor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,7 +147,13 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>cleaner.cpp</itemPath>
+      <itemPath>counters.cpp</itemPath>
+      <itemPath>cpu.cpp</itemPath>
+      <itemPath>event_alarm.cpp</itemPath>
+      <itemPath>fork.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>monitor.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -26,6 +167,10 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>include</Elem>
+    <Elem>arch</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -41,7 +186,258 @@
           </incDir>
         </ccTool>
       </compileType>
+      <item path="cleaner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cleaner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="consts.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="counters.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="counters.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cpu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cpu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="event_alarm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="event_alarm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fork.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fork.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/atomic-gcc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/barrier.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/__ffs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/__ffz.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/__fls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/arch_hweight.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/atomic.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/const_hweight.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/find.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/fls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/fls64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/hweight.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitsperlong.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/hugetlb_encode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm/alternative-asm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/atomic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/barrier.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/bug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/export.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/sections.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/atomic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/bitmap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/bitops.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/bug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/compiler-gcc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/compiler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/coresight-pmu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/debug_locks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/delay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/err.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/export.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/filter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/ftrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/gfp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/hardirq.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/hash.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/hashtable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/interrupt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/irqflags.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/jhash.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/kallsyms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/kern_levels.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/kernel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/linkage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/lockdep.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/log2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/module.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/mutex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/poison.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/proc_fs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/rbtree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/rbtree_augmented.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/rcu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/refcount.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/sched/clock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/sched/mm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/sched/task.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/seq_file.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/spinlock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/stacktrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/string.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/stringify.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/time64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/unaligned/packed_struct.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/tools/be_byteshift.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/tools/endian.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/tools/le_byteshift.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/trace/events/lock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/bitsperlong.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/bpf_perf_event.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/errno-base.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/errno.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/fcntl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/ioctls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/mman-common.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/mman.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm/bpf_perf_event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/drm/drm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/drm/i915_drm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/bpf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/bpf_common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/bpf_perf_event.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/linux/fcntl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/hw_breakpoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/kcmp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/kvm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/mman.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/perf_event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/prctl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/sched.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/stat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/vhost.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/sound/asound.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="monitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="monitor.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -64,7 +460,258 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="cleaner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cleaner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="consts.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="counters.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="counters.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cpu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cpu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="event_alarm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="event_alarm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="fork.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="fork.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/atomic-gcc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/barrier.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/__ffs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/__ffz.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/__fls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/arch_hweight.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/atomic.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/const_hweight.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/find.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/fls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/fls64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitops/hweight.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm-generic/bitsperlong.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm-generic/hugetlb_encode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/asm/alternative-asm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/atomic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/barrier.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/bug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/export.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/asm/sections.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/atomic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/bitmap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/bitops.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/bug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/compiler-gcc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/compiler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/coresight-pmu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/debug_locks.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/delay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/err.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/export.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/filter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/ftrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/gfp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/hardirq.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/hash.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/hashtable.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/interrupt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/irqflags.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/jhash.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/kallsyms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/kern_levels.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/kernel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/linkage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/list.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/lockdep.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/log2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/module.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/mutex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/poison.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/proc_fs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/rbtree.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/rbtree_augmented.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/rcu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/refcount.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/sched/clock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/sched/mm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/sched/task.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/seq_file.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/spinlock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/stacktrace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/string.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/stringify.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/time64.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/linux/unaligned/packed_struct.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/tools/be_byteshift.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/tools/endian.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/tools/le_byteshift.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/trace/events/lock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/bitsperlong.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/bpf_perf_event.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/errno-base.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/errno.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/fcntl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/ioctls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/mman-common.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/asm-generic/mman.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/asm/bpf_perf_event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/drm/drm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/drm/i915_drm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/bpf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/bpf_common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/bpf_perf_event.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/uapi/linux/fcntl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/hw_breakpoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/kcmp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/kvm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/mman.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/perf_event.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/prctl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/sched.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/stat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/linux/vhost.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/uapi/sound/asound.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="monitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="monitor.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
