@@ -41,11 +41,11 @@ struct counter_group {
 
 struct event_ref {
     struct perf_event_header header;
-    u64 sample_id; /* if PERF_SAMPLE_IDENTIFIER */
-    u32 pid, tid; /* if PERF_SAMPLE_TID */
-    u64 time; /* if PERF_SAMPLE_TIME */
-    u64 stream_id; /* if PERF_SAMPLE_STREAM_ID */
-    u32 cpu, res; /* if PERF_SAMPLE_CPU */
+    uint64_t sample_id; /* if PERF_SAMPLE_IDENTIFIER */
+    uint32_t pid, tid; /* if PERF_SAMPLE_TID */
+    uint64_t time; /* if PERF_SAMPLE_TIME */
+    uint64_t stream_id; /* if PERF_SAMPLE_STREAM_ID */
+    uint32_t cpu, res; /* if PERF_SAMPLE_CPU */
     struct counter_group counters; // guess
 };
 

@@ -97,6 +97,7 @@ void handle_event(struct perf_event_header * msg, CpuIndicator * cpu) {
     if (msg->type == PERF_RECORD_SAMPLE) {
         struct event_ref * sample = (struct event_ref*) msg;
         if(getpid() == sample->pid) {
+            cout << "ignoring pid: " << sample->pid << " cpu: " << sample->cpu << endl;
             return;
         }
         uint64_t *pMiss, *pRef;
