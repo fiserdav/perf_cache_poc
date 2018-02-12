@@ -9,7 +9,8 @@ using namespace std;
 
 int doFork() {
     int cpuCount = sysconf(_SC_NPROCESSORS_ONLN);
-    cout << "Found " << cpuCount << " cpu(s)" << endl;
+    cout << " found " << cpuCount << " cpu(s); ";
+    cout << MODE << endl << endl;
     int forkedCount = 0;
     for(int i = 0; i < cpuCount;i++) {
         pid_t pid = fork();
