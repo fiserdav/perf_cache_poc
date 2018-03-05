@@ -17,9 +17,8 @@
 #include "counters.h"
 #include <stdint.h>
 
-const float_t INFO_TRESHOLD = 0.97f;
-const float_t WARN_TRESHOLD = 0.98f;
-const float_t ERR_TRESHOLD = 0.99f;
+
+const float_t ALARM_TRESHOLD = 0.99f;
 
 void eventAlarm(float_t value, struct event_ref * event);
 #endif /* ALARM_H */
